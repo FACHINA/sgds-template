@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./splide/css/themes/splide-default.min.css">
     <link rel="stylesheet" href="./app.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
     </style>
 </head>
 
@@ -30,19 +30,15 @@
                                 d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="height: 1.2rem;">
-                            <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
-                          </svg> -->
-
                     </a>
-                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    <button class="navbar-toggler border-0 px-1 shadow-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
                 <div class="collapse iconic-nav navbar-collapse" id="navbarNavDropdown">
-                    <ul class="align-items-center fw-normal ms-auto navbar-nav">
+                    <ul class="align-items-center fw-normal ms-auto navbar-nav tracking-wake">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
                         </li>
@@ -463,6 +459,21 @@
                                 </div>
                             </a>
                         </li>
+                        <li class="col-lg-4 col-sm-6">
+                            <a href="#" class="text-decoration-none d-inline-block w-100 h-100">
+                                <div class="border-3 h-100 rounded-fit-slide iconic-bordered-card card">
+                                    <div
+                                        class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" style="width: 3rem;">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 10.5v6m3-3H9m4.06-7.19-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                                        </svg>
+                                        <div class="fw-bold">Consulter tous le catalogue</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -482,7 +493,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-lg-end text-center">
-                        <div class="col-lg-8 col-6 d-inline-block">
+                        <div class="col-xl-10 col-lg-9 col-8 d-inline-block">
                             <img class="img-fluid" src="./img/sensibilisation.png" alt="sensibilisation">
                         </div>
                     </div>
@@ -490,21 +501,222 @@
                 <div class="mb-4"></div>
             </div>
         </section>
-        <div class="d-flex flex-nowrap w-100">
+        <div class="d-flex flex-nowrap w-100 mb-5">
             <div class="col-4 bg-primary" style="height: 5px;"></div>
             <div class="col-4 bg-warning" style="height: 5px;"></div>
             <div class="col-4 bg-danger" style="height: 5px;"></div>
         </div>
     </main>
 
+    <div class="offcanvas offcanvas-start" style="max-width: 20rem;" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./img/logo.png" alt="logo-sidebar" width="120px">
+            </h5>
+            <button type="button"
+                class="btn-outline-black bg-white text-black rounded-4 shadow border-2 btn-sm px-2 py-2 lh-1 btn fw-bold me-0 ms-auto"
+                data-bs-dismiss="offcanvas" aria-label="Close">
+                <!--<svg xmlns="http://www.w3.org/2000/svg" style="width: 1rem;" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="width: 1rem;" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                  </svg> --> FERMER
+
+            </button>
+
+        </div>
+        <div class="offcanvas-body px-0">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item border-top">
+                    <button
+                        class="nav-link accordion-button no-toggler text-start px-3 py-2 shadow-none collapsed w-100"
+                        type="button" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Acceuil
+                    </button>
+                </div>
+                <div class="accordion-item">
+                    <button class="nav-link accordion-button text-start px-3 py-2 shadow-none collapsed w-100"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                        aria-expanded="false" aria-controls="flush-collapseOne">
+                        Services
+                    </button>
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse p-0"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-0" id="accordionSubElement1">
+                        <div class="accordion-item border-top">
+                            <button
+                                class="nav-link accordion-button no-toggler text-start px-3 py-2 shadow-none collapsed w-100"
+                                type="button" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Sub 1
+                            </button>
+                        </div>
+                        <div class="accordion-item border-top-0 border-bottom">
+                            <button class="nav-link accordion-button text-start px-3 py-2 shadow-none collapsed w-100"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                Sub 2 (01)
+                            </button>
+                        </div>
+                        <div id="flush-collapseThree" data-bs-parent="#accordionSubElement1"
+                            class="accordion-collapse border-bottom p-0 collapse">
+                            <div class="accordion-body px-3 py-2">
+                                Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.
+                            </div>
+                        </div>
+                        <div class="accordion-item border-top-0 border-bottom">
+                            <button class="nav-link accordion-button text-start px-3 py-2 shadow-none collapsed w-100"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                Sub 2 (02)
+                            </button>
+                        </div>
+                        <div id="flush-collapseFour" data-bs-parent="#accordionSubElement1"
+                            class="accordion-collapse border-bottom p-0 collapse">
+                            <div class="accordion-body px-3 py-2">
+                                Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                                body.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="nav-link accordion-button text-start px-3 py-2 shadow-none collapsed w-100"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Nos activites
+                    </button>
+                </div>
+                <div id="flush-collapseTwo" class="accordion-collapse border-bottom p-0 collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body px-3 py-2">
+                        Placeholder content for this accordion, which is intended to
+                        demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                        body.
+                    </div>
+                </div>
+                <div class="accordion-item"></div>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <div class="container-xxl py-5">
-            <div class="row">
-                <div class="col-lg-4 text-start">
-                    <img style="margin-left: -2rem;" src="./img/logo.png" width="250px" alt="">
-                    <div class="mt-3 fw-medium" style="max-width: 50rem;">
-                        Une gestion collective et responsable des déchets
-                        pour un environnement sain et propre
+        <div class="container-xxl">
+            <div class="row gy-5">
+                <div class="col-12">
+                    <div class="container-fluid px-0">
+                        <div class="row gy-4">
+                            <div class="col-xl-3 col-lg-4 text-start">
+                                <div>
+                                    <img src="./img/logo.png" width="135px" alt="">
+                                </div>
+                                <div class="mt-4 d-inline-block lh-sm"
+                                    style="max-width: 20rem;letter-spacing: -0.04rem;">
+                                    Une gestion collective et responsable des déchets
+                                    pour un environnement sain et propre
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 rounded-fit-slide">
+                                    <div class="card-body p-0">
+                                        <h3 class="iconic-text fw-bolder mb-4">S'abonner à la <br> Newsletter</h3>
+                                        <!-- <input style="padding: 0.6rem 1.5rem !important;" placeholder="Nom complet"
+                                        class="form-control fw-bolder rounded-5 px-4 py-2 mb-3 mb-0 d-inline-block"
+                                        type="text"> -->
+                                        <div class="me-auto d-flex gap-3 flex-sm-nowrap flex-wrap">
+                                            <!-- <input placeholder="Nom complet"
+                                                class="form-control fw-bolder lh-1 mb-0 d-inline-block"
+                                                type="text"> -->
+                                            <input placeholder="Adresse e-email"
+                                                class="form-control fw-bolder rounded-5 px-4 lh-1 mb-0 d-inline-block"
+                                                type="email">
+                                            <div>
+                                                <button
+                                                    class="btn btn-primary d-block  d-none d-sm-block iconic-btn">S'abonner</button>
+                                                <button
+                                                    class="btn btn-primary d-block w-100 d-block d-sm-none iconic-btn">S'abonner</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="container-fluid px-0 iconic-nav">
+                        <div class="row gy-4">
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <h4 class="h5 fw-semibold tracking mb-4">La société</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-2 tracking-wake">
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Histoire</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Missions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <h4 class="h5 fw-semibold tracking mb-4">Nos activités</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-2 tracking-wake">
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Salubrité</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Gestion des
+                                            déchets</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Suivi et
+                                            controle</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Informations et
+                                            sensibilisations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <h4 class="h5 fw-semibold tracking mb-4">Médiathèque</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-2 tracking-wake">
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Documents</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Gallerie</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Carrières</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Article de
+                                            presses</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <h4 class="h5 fw-semibold tracking mb-4">Autres</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-2 tracking-wake">
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Offres d'emplois</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                <h4 class="h5 fw-semibold tracking mb-4">Autres</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-2 tracking-wake">
+                                    <li>
+                                        <a class="text-decoration-none text-dark nav-link" href="#">Offres d'emplois</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

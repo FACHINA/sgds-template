@@ -28,8 +28,7 @@ body {
 }
 
 .iconic-nav .nav-link.active,
-.iconic-nav .nav-link:hover
- {
+.iconic-nav .nav-link:hover {
   color: var(--bs-primary) !important;
 }
 
@@ -108,8 +107,7 @@ body {
 }
 
 .iconic-dropdown-wrapper .iconic-dropdown svg,
-.nav-link
- {
+.nav-link {
   transition: all 0.15s ease-in-out;
   transform-origin: center;
 }
@@ -119,8 +117,17 @@ body {
 }
 
 .iconic-dropdown-menu {
-  --bs-dropdown-link-active-bg: transparent;
-  --bs-dropdown-link-bg: transparent;
+  --bs-dropdown-link-active-bg: #0000;
+  --bs-dropdown-link-bg: #0000;
+  --bs-dropdown-font-size: 1.1rem;
+}
+
+.form-control::placeholder {
+  color: rgba(196, 196, 196, 0.795);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 .15rem rgb(106 181 40);
 }
 
 .dropdown-item {
@@ -186,6 +193,14 @@ body {
 
 /* Text style */
 
+.tracking {
+  letter-spacing: -0.065rem;
+}
+
+.tracking-wake {
+  letter-spacing: -0.035rem;
+}
+
 .tracking-tight {
   letter-spacing: -0.12rem;
 }
@@ -199,6 +214,10 @@ body {
   background: linear-gradient(90deg, rgb(110, 205, 26) 0%, rgb(106 181 40) 35%, rgb(48, 99, 14) 100%);
 }
 
+.iconic-bg-gradient {
+  background: linear-gradient(90deg, rgb(110, 205, 26) 0%, rgb(106 181 40) 35%, rgb(48, 99, 14) 100%);
+}
+
 .iconic-bg-cover {
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -209,4 +228,37 @@ body {
 .iconic-bg-cover.iconic-hover:hover {
   background-size: 120% 120%;
   transition-duration: 25s;
+}
+
+.accordion-button.no-toggler::after {
+  content: unset !important;
+}
+
+.accordion-button {
+  --bs-accordion-btn-icon-width: 0.7rem;
+}
+
+.accordion-button.no-toggler:hover,
+.accordion-button.no-toggler:focus {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-primary-bg-subtle);
+}
+
+.accordion-button.active,
+.accordion-button.active {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-primary-bg-subtle);
+}
+
+.iconic-bordered-card {
+  border: 3px dashed var(--bs-primary);
+  background-color: #0000;
+  color: var(--bs-primary);
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.iconic-bordered-card:hover {
+  background-color: rgba(255, 255, 255, 0.784);
+  box-shadow: 0 4px 6px -1px rgba(11, 136, 21, 0.1), 0 2px 5px -2px rgba(11, 136, 21, 0.1);
 }
