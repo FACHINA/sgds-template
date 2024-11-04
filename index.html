@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./splide/css/themes/splide-default.min.css">
     <link rel="stylesheet" href="./app.css">
     <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
 </head>
 
@@ -264,7 +264,9 @@
                 </div>
             </div>
         </section>
+
         <div class="mb-5"></div>
+
         <section class="py-5 mt-5 overflow-hidden bg-primary mt-3 mb-5">
             <div class="container-xxl">
                 <div class="row g-5 text-start text-xxl-center">
@@ -288,6 +290,7 @@
                 </div>
             </div>
         </section>
+
         <section class="my-5">
             <div class="container-xxl">
                 <div class="text-start mb-4 flex-wrap justify-content-between d-flex align-items-center">
@@ -337,6 +340,7 @@
                 </div>
             </div>
         </section>
+
         <section class="my-5 bg-primary bg-opacity-10 py-5">
             <div class="container-xxl my-4">
                 <div class="mb-5 text-center">
@@ -354,7 +358,7 @@
                 </div>
                 <div id="iconic-consultation-list">
                     <ul class="row gy-4 justify-content-center list-unstyled">
-                        <li class="col-lg-4 col-sm-6">
+                        <li class="col-lg-4 col-sm-6 iconic-map-card">
                             <a href="#" class="text-decoration-none">
                                 <div style="background-image: url('./img/town/cotonou.jpg');"
                                     class="card shadow iconic-bg-cover iconic-hover overflow-hidden border-0 rounded-fit-slide">
@@ -362,7 +366,7 @@
                                         class="card-body py-4 text-center iconic-slide-gradient-overlay">
                                         <div style="height: 12px;width: 30px;"
                                             class="text-primary mt-2 rounded-3 d-inline-block">
-                                            <img src="./img/icon/map-pin.png" width="30px" alt="">
+                                            <img src="./img/icon/map-pin.png" class="map-pin" width="30px" alt="">
                                         </div>
                                         <h3 class="mb-0 h2 fw-bolder tracking-tight text-white mt-3">Cotonou</h3>
                                         <div style="height: 8px;width: 30px;"
@@ -375,7 +379,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="col-lg-4 col-sm-6">
+                        <li class="col-lg-4 col-sm-6 iconic-map-card">
                             <a href="#" class="text-decoration-none">
                                 <div style="background-image: url('./img/town/porto.jpg');"
                                     class="card shadow iconic-bg-cover iconic-hover overflow-hidden border-0 rounded-fit-slide">
@@ -383,7 +387,7 @@
                                         class="card-body py-4 text-center iconic-slide-gradient-overlay">
                                         <div style="height: 12px;width: 30px;"
                                             class="text-primary mt-2 rounded-3 d-inline-block">
-                                            <img src="./img/icon/map-pin.png" width="30px" alt="">
+                                            <img src="./img/icon/map-pin.png" class="map-pin" width="30px" alt="">
                                         </div>
                                         <h3 class="mb-0 h2 fw-bolder tracking-tight text-white mt-3">Porto-Novo</h3>
                                         <div style="height: 8px;width: 30px;"
@@ -396,7 +400,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="col-lg-4 col-sm-6">
+                        <li class="col-lg-4 col-sm-6 iconic-map-card">
                             <a href="#" class="text-decoration-none">
                                 <div style="background-image: url('./img/town/abomey-calavi.jpeg');"
                                     class="card shadow iconic-bg-cover iconic-hover overflow-hidden border-0 rounded-fit-slide">
@@ -404,7 +408,7 @@
                                         class="card-body py-4 text-center iconic-slide-gradient-overlay">
                                         <div style="height: 12px;width: 30px;"
                                             class="text-primary mt-2 rounded-3 d-inline-block">
-                                            <img src="./img/icon/map-pin.png" width="30px" alt="">
+                                            <img src="./img/icon/map-pin.png" class="map-pin" width="30px" alt="">
                                         </div>
                                         <h3 class="mb-0 h2 fw-bolder tracking-tight text-white mt-3">Abomey-Calavi</h3>
                                         <div style="height: 8px;width: 30px;"
@@ -463,7 +467,7 @@
                             <a href="#" class="text-decoration-none d-inline-block w-100 h-100">
                                 <div class="border-3 h-100 rounded-fit-slide iconic-bordered-card card">
                                     <div
-                                        class="card-body py-4 d-flex flex-column justify-content-center align-items-center">
+                                        class="card-body py-5 d-flex flex-column justify-content-center align-items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" style="width: 3rem;">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -479,6 +483,96 @@
             </div>
             <div class="mb-5 py-3"></div>
         </section>
+
+        <section>
+            <div class="container-xxl">
+                <form>
+                    <!-- Informations Générales -->
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom complet" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="type_client" class="form-label">Type de client</label>
+                        <select class="form-select" id="type_client" name="type_client" required>
+                            <option value="" disabled selected>Sélectionnez votre type</option>
+                            <option value="particulier">Particulier</option>
+                            <option value="entreprise">Entreprise</option>
+                            <option value="collectivite">Collectivité</option>
+                        </select>
+                    </div>
+            
+                    <!-- Évaluation du Service -->
+                    <h4 class="mt-4">Évaluation du Service</h4>
+            
+                    <div class="mb-3">
+                        <label for="frequence_collecte" class="form-label">Fréquence de collecte des déchets</label>
+                        <select class="form-select" id="frequence_collecte" name="frequence_collecte" required>
+                            <option value="" disabled selected>Sélectionnez</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="bon">Bon</option>
+                            <option value="moyen">Moyen</option>
+                            <option value="insuffisant">Insuffisant</option>
+                        </select>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="qualite_collecte" class="form-label">Qualité du service de collecte</label>
+                        <select class="form-select" id="qualite_collecte" name="qualite_collecte" required>
+                            <option value="" disabled selected>Sélectionnez</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="bon">Bon</option>
+                            <option value="moyen">Moyen</option>
+                            <option value="insuffisant">Insuffisant</option>
+                        </select>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="proprete_apres_collecte" class="form-label">Propreté après la collecte</label>
+                        <select class="form-select" id="proprete_apres_collecte" name="proprete_apres_collecte" required>
+                            <option value="" disabled selected>Sélectionnez</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="bon">Bon</option>
+                            <option value="moyen">Moyen</option>
+                            <option value="insuffisant">Insuffisant</option>
+                        </select>
+                    </div>
+            
+                    <!-- Retour d'Expérience et Suggestions -->
+                    <div class="mb-3">
+                        <label for="problemes" class="form-label">Avez-vous rencontré des problèmes spécifiques avec notre service ?</label>
+                        <textarea class="form-control" id="problemes" name="problemes" rows="3" placeholder="Décrivez les éventuels problèmes rencontrés"></textarea>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="suggestions" class="form-label">Suggestions pour améliorer nos services</label>
+                        <textarea class="form-control" id="suggestions" name="suggestions" rows="3" placeholder="Partagez vos suggestions ici"></textarea>
+                    </div>
+            
+                    <!-- Recommandation -->
+                    <div class="mb-3">
+                        <label for="recommendation" class="form-label">Recommanderiez-vous notre service à d'autres personnes ?</label>
+                        <select class="form-select" id="recommendation" name="recommendation" required>
+                            <option value="" disabled selected>Sélectionnez</option>
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
+                        </select>
+                    </div>
+            
+                    <!-- Soumettre le formulaire -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         <section>
             <div class="container-xxl pb-5">
                 <div class="row gy-5 align-items-center">
@@ -501,6 +595,7 @@
                 <div class="mb-4"></div>
             </div>
         </section>
+
         <div class="d-flex flex-nowrap w-100 mb-5">
             <div class="col-4 bg-primary" style="height: 5px;"></div>
             <div class="col-4 bg-warning" style="height: 5px;"></div>
@@ -611,7 +706,7 @@
                 <div class="col-12">
                     <div class="container-fluid px-0">
                         <div class="row gy-4">
-                            <div class="col-xl-3 col-lg-4 text-start">
+                            <div class="col-xl-3 col-lg-4 text-sm-start text-center">
                                 <div>
                                     <img src="./img/logo.png" width="135px" alt="">
                                 </div>
@@ -623,23 +718,41 @@
                             </div>
                             <div class="col">
                                 <div class="card border-0 rounded-fit-slide">
-                                    <div class="card-body p-0">
+                                    <div class="card-body p-0 text-sm-start text-center">
                                         <h3 class="iconic-text fw-bolder mb-4">S'abonner à la <br> Newsletter</h3>
                                         <!-- <input style="padding: 0.6rem 1.5rem !important;" placeholder="Nom complet"
                                         class="form-control fw-bolder rounded-5 px-4 py-2 mb-3 mb-0 d-inline-block"
                                         type="text"> -->
-                                        <div class="me-auto d-flex gap-3 flex-sm-nowrap flex-wrap">
-                                            <!-- <input placeholder="Nom complet"
-                                                class="form-control fw-bolder lh-1 mb-0 d-inline-block"
-                                                type="text"> -->
+                                        <div class="me-auto d-flex justify-content-center justify-content-sm-start gap-3 flex-sm-nowrap flex-wrap">
+                                            <input placeholder="Nom complet"
+                                                class="form-control fw-bolder border-2 rounded-5 px-4 lh-1 mb-0 d-inline-block"
+                                                type="text">
                                             <input placeholder="Adresse e-email"
-                                                class="form-control fw-bolder rounded-5 px-4 lh-1 mb-0 d-inline-block"
+                                                class="form-control fw-bolder border-2 rounded-5 px-4 lh-1 mb-0 d-inline-block"
                                                 type="email">
                                             <div>
                                                 <button
-                                                    class="btn btn-primary d-block  d-none d-sm-block iconic-btn">S'abonner</button>
+                                                    class="btn btn-primary d-inline-block text-nowrap d-none d-sm-block iconic-btn">
+                                                    S'abonner
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="d-inline-block ms-1"
+                                                        viewBox="0 0 24 24" fill="currentColor" style="height: 1.2rem;">
+                                                        <path
+                                                            d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                                        <path
+                                                            d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                                                    </svg>
+                                                </button>
                                                 <button
-                                                    class="btn btn-primary d-block w-100 d-block d-sm-none iconic-btn">S'abonner</button>
+                                                    class="btn btn-primary d-inline-block w-100 d-block d-sm-none iconic-btn">
+                                                    S'abonner
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="d-inline-block ms-1"
+                                                        viewBox="0 0 24 24" fill="currentColor" style="height: 1.2rem;">
+                                                        <path
+                                                            d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+                                                        <path
+                                                            d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -650,7 +763,7 @@
                 </div>
                 <div class="col-12">
                     <div class="container-fluid px-0 iconic-nav">
-                        <div class="row gy-4">
+                        <div class="row gy-4 text-sm-start text-center">
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <h4 class="h5 fw-semibold tracking mb-4">La société</h4>
                                 <ul class="list-unstyled d-flex flex-column gap-2 tracking-wake">
@@ -718,6 +831,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-12 text-muted tracking fw-medium  pb-5">
+                  <small>SGDS © 2024 - Conditions générales d'utilisation - Politique de confidentialité</small>
                 </div>
             </div>
         </div>

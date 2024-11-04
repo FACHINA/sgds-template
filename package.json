@@ -1,0 +1,19 @@
+{
+  "name": "sgds-template",
+  "version": "1.0.0",
+  "description": "SGDS project template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACHINA/sgds-template"
+  },
+  "author": "Anderson FACHINA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FACHINA/sgds-template/issues"
+  },
+  "homepage": "https://github.com/FACHINA/sgds-template#readme"
+}
