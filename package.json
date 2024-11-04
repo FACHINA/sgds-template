@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/FACHINA/sgds-template/issues"
   },
-  "homepage": "https://github.com/FACHINA/sgds-template#readme"
+  "homepage": "https://github.com/FACHINA/sgds-template#readme",
+  "dependencies": {
+    "star-rating.js": "^4.3.1"
+  }
 }
